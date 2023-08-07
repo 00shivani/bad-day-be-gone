@@ -17,7 +17,7 @@ var getQuote = function () {
 var getQuoteNow = function () {
     var apiUrl = 'https://zenquotes.io/api/[mode]/[key]?option1=value&option2=value';
 
-    fetch(apiUrl).then(function (response) {
+    fetch(apiUrl + '{mode: "no-cors"}').then(function (response) {
         if (response.ok) {
             response.json().then(function(data) {
                 displayQuotes(data);
