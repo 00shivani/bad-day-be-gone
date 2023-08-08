@@ -100,14 +100,16 @@ main {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
+
+
+
 }
 
 
-.scroll-ul {   
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    max-width: 600px;
+
+
+.scroll-div {   
+    width: 53%;
     overflow-x: scroll;
     white-space: nowrap;
 }
