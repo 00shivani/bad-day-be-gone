@@ -1,0 +1,21 @@
+/* color palette: */
+:root {
+--light-peach: #FDF3DD ;
+--white : #FFFFFF;
+--orange : #EF601E;
+--yellow: #E9B149;
+--lightpurple: #CAAACD;
+--palepurple: #E6C5E9;
+--deepyellow: #9E7002;
+}
+
+
+
+* {
+    background-color: var(--deepyellow);
+    color: blue;
+}
+
+.header-top {
+    background-color: #9E7002;
+}

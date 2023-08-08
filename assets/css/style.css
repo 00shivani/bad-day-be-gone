@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color palette: */
+:root {
+    --light-peach: #FDF3DD ;
+    --white : #FFFFFF;
+    --orange : #EF601E;
+    --yellow: #E9B149;
+    --lightpurple: #CAAACD;
+    --palepurple: #E6C5E9;
+    --deepyellow: #9E7002;
+    }
+    
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #FDF3DD;
+    box-sizing: border-box;
+
+}
+
+.top-header {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(
+        to right,
+        #FF66C4 0%,
+        #FFDE59 100%
+    );
+}
+
+.navbar {
+    width: 100%;
+    height: 0vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+nav {
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.right-tab h1 {
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 100px;
+    margin-left: 50%;
+    margin-bottom: ;
+}
+
+.right-tab p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-bottom: ;
+}
+
+
+.scroll-div {   
+    width: 30em;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+div.activity {
+
+
+}
+
+
