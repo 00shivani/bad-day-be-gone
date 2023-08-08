@@ -92,16 +92,23 @@ main {
     font-size: 40px;
     font-weight: 100;
     margin-top: 80px;
+
+
     margin-bottom: ;
+
 }
 
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
+
+
     margin-bottom: ;
 }
 
+
+}
 
 .scroll-div {   
     width: 53%;
@@ -110,7 +117,11 @@ main {
 }
 
 .activity {
+
+    width: 400px;
+
     width: 300px;
+
     margin-top: 30px;
     cursor: pointer;
 }
