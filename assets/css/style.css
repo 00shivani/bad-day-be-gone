@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* color palette: */
 :root {
     --light-peach: #FDF3DD ;
@@ -75,3 +79,17 @@ nav ul li {
     margin-left: 50%;
     margin-bottom: ;
 }
+
+
+.scroll-div {   
+    width: 30em;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+div.activity {
+
+
+}
+
+
