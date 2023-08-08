@@ -11,6 +11,7 @@
     --lightpurple: #CAAACD;
     --palepurple: #E6C5E9;
     --deepyellow: #9E7002;
+    --green: #8B9B96;
     }
     
 * {
@@ -18,17 +19,18 @@
     padding: 0;
 }
 
-body {
-    height: 100vh;
+.screen-one {
+    display: flex;
+    height: 95vh;
     width: 100%;
     background-color: #FDF3DD;
     box-sizing: border-box;
-
 }
 
 .top-header {
     width: 100%;
     height: 30px;
+    line-height: 1px;
     background: linear-gradient(
         to right,
         #FF66C4 0%,
@@ -68,62 +70,63 @@ nav ul li {
     
 }
 
-main {
-    display: flex;
-}
-
 .left-tab {
-    width: 40%;
-    margin-top: 120px;
-    margin-right: 40px;
     position: relative;
-    left: 70px;
+    top: 15%;
+    left: 5%;
 }
 
 .right-tab {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    right: 2%;
 }
 
 #happy-pic {
-    width: 600px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+    width: 400px;
     border-top-right-radius: 25%;
 }
 
 .right-tab h1 {
     font-size: 40px;
     font-weight: 100;
-    margin-top: 60px;
-    padding-left: 70px;
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 10px;
-    padding-left: 70px;
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
 }
 
-/* .scroll-div {
-    display: block;
-} */
 
 .scroll-ul {  
     display: flex; 
-    width: 90%;
+    width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
-    margin-left: 70px;
+    margin-top: 15px;
 }
 
 .activity {
     display: block;
-    width: 250px;
+    width: 240px;
     margin-top: 20px;
     cursor: pointer;
+
 }
 
+.screen-two {
+    background-color: var(--green);
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+}
 
