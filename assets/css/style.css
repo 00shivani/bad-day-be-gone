@@ -34,6 +34,7 @@ body {
         #FF66C4 0%,
         #FFDE59 100%
     );
+    text-align: center;
 }
 
 .navbar {
@@ -72,10 +73,17 @@ main {
 }
 
 .left-tab {
+<<<<<<< HEAD
     width: 50%;
     margin-top: 80px;
     margin-left: 40px;
+=======
+    width: 40%;
+    margin-top: 120px;
+>>>>>>> 2977b0e3776437e267f70a94ae8ce578e036aa09
     margin-right: 40px;
+    position: relative;
+    left: 70px;
 }
 
 .right-tab {
@@ -91,38 +99,58 @@ main {
 .right-tab h1 {
     font-size: 40px;
     font-weight: 100;
+<<<<<<< HEAD
     margin-top: 80px;
 
 
     margin-bottom: ;
 
+=======
+    margin-top: 60px;
+    padding-left: 70px;
+    text-align: center;
+>>>>>>> 2977b0e3776437e267f70a94ae8ce578e036aa09
 }
 
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
+<<<<<<< HEAD
 
 
     margin-bottom: ;
+=======
+    padding-left: 70px;
+    text-align: center;
+>>>>>>> 2977b0e3776437e267f70a94ae8ce578e036aa09
 }
 
+/* .scroll-div {
+    display: block;
+} */
 
-
-
-.scroll-div {   
-    width: 53%;
+.scroll-ul {  
+    display: flex; 
+    width: 90%;
     overflow-x: scroll;
     white-space: nowrap;
+    margin-left: 70px;
 }
 
 .activity {
+<<<<<<< HEAD
 
     width: 400px;
 
     width: 300px;
 
     margin-top: 30px;
+=======
+    display: block;
+    width: 250px;
+    margin-top: 20px;
+>>>>>>> 2977b0e3776437e267f70a94ae8ce578e036aa09
     cursor: pointer;
 }
 circle-conatiner {
