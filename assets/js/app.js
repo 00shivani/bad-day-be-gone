@@ -1,4 +1,3 @@
-import "tailwindcss/tailwind.css"
 
 // tasks:
 // 1. create div
