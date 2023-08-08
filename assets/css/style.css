@@ -38,7 +38,7 @@ body {
 
 .navbar {
     width: 100%;
-    height: 0vh;
+    height: 0vh; 
     margin: auto;
     display: flex;
     align-items: center;
@@ -73,20 +73,18 @@ main {
 
 .left-tab {
     width: 50%;
-    margin-top: 120px;
-    margin-left: 0px;
-    padding-left: 80px;
+    margin-top: 80px;
+    margin-left: 40px;
     margin-right: 40px;
 }
 
 .right-tab {
-    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 #happy-pic {
-    width: 600px;
+    width: 400px;
     border-top-right-radius: 25%;
 }
 
@@ -94,6 +92,10 @@ main {
     font-size: 40px;
     font-weight: 100;
     margin-top: 80px;
+
+
+    margin-bottom: ;
+
 }
 
 .right-tab p {
@@ -102,7 +104,7 @@ main {
     margin-top: 10px;
 
 
-
+    margin-bottom: ;
 }
 
 
@@ -115,10 +117,26 @@ main {
 }
 
 .activity {
-    overflow-x: scroll;
+
     width: 400px;
+
+    width: 300px;
+
     margin-top: 30px;
     cursor: pointer;
 }
+circle-conatiner {
+    display: inline-block;
+    position: relative;
+}
+
+
+.hover-rounded-full:hover {
+    border-radius: 9999px;
+}
+
+
+
+
 
 
