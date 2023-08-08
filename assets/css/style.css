@@ -34,6 +34,7 @@ body {
         #FF66C4 0%,
         #FFDE59 100%
     );
+    text-align: center;
 }
 
 .navbar {
@@ -72,11 +73,11 @@ main {
 }
 
 .left-tab {
-    width: 50%;
+    width: 40%;
     margin-top: 120px;
-    margin-left: 0px;
-    padding-left: 80px;
     margin-right: 40px;
+    position: relative;
+    left: 70px;
 }
 
 .right-tab {
@@ -93,31 +94,35 @@ main {
 .right-tab h1 {
     font-size: 40px;
     font-weight: 100;
-    margin-top: 80px;
+    margin-top: 60px;
+    padding-left: 70px;
+    text-align: center;
 }
 
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
-
-
-
+    padding-left: 70px;
+    text-align: center;
 }
 
+/* .scroll-div {
+    display: block;
+} */
 
-
-
-.scroll-div {   
-    width: 53%;
+.scroll-ul {  
+    display: flex; 
+    width: 90%;
     overflow-x: scroll;
     white-space: nowrap;
+    margin-left: 70px;
 }
 
 .activity {
-    overflow-x: scroll;
-    width: 400px;
-    margin-top: 30px;
+    display: block;
+    width: 250px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
