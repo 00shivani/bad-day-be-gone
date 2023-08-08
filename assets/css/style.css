@@ -73,18 +73,20 @@ main {
 
 .left-tab {
     width: 50%;
-    margin-top: 80px;
-    margin-left: 40px;
+    margin-top: 120px;
+    margin-left: 0px;
+    padding-left: 80px;
     margin-right: 40px;
 }
 
 .right-tab {
+    margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 #happy-pic {
-    width: 400px;
+    width: 600px;
     border-top-right-radius: 25%;
 }
 
@@ -92,36 +94,27 @@ main {
     font-size: 40px;
     font-weight: 100;
     margin-top: 80px;
-
-
-    margin-bottom: ;
-
 }
 
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
-
-
-    margin-bottom: ;
 }
 
 
-}
-
-.scroll-div {   
-    width: 53%;
+.scroll-ul {   
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    max-width: 600px;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
 .activity {
-
+    overflow-x: scroll;
     width: 400px;
-
-    width: 300px;
-
     margin-top: 30px;
     cursor: pointer;
 }
