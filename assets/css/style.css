@@ -45,13 +45,14 @@ body {
 }
 
 #logo {
-    width: 160px;
+    width: 300px;
     cursor: pointer;
     position: relative;
     top: 50px;
 }
 
 nav {
+    width: 100%;
     flex: 1;
     padding-left: 60px;
 }
@@ -59,16 +60,38 @@ nav {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0 20px;
+    margin-top: 20px;
+    margin-left: 100px;
     text-decoration: none;
     color: black;
+    
+}
+
+main {
+    display: flex;
+}
+
+.left-tab {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.right-tab {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#happy-pic {
+    width: 400px;
+    border-top-right-radius: 25%;
 }
 
 .right-tab h1 {
     font-size: 40px;
     font-weight: 100;
-    margin-top: 100px;
-    margin-left: 50%;
+    margin-top: 80px;
     margin-bottom: ;
 }
 
@@ -76,20 +99,20 @@ nav ul li {
     font-size: 15px;
     font-weight: 100;
     margin-top: 10px;
-    margin-left: 50%;
     margin-bottom: ;
 }
 
 
 .scroll-div {   
-    width: 30em;
+    width: 53%;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
-div.activity {
-
-
+.activity {
+    width: 300px;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 
