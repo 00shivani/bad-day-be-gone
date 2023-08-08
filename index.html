@@ -39,22 +39,60 @@
 
 
     <main class="screen-one">
+        <!-- BRACE YOURSELF. THE FOLLOWING WALL OF TEXT IS FOR THE CAROUSEL -->
         <section class="left-tab">
-            <img id="happy-pic" src="assets/images/happy-guy.jpg">
+          <div
+          id="carousel"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel">
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+              data-te-carousel-active>
+              <img
+                src="assets/images/2.png"
+                class="block w-full"
+                alt="Wild Landscape" />
+            </div>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item>
+              <img
+                src="assets/images/4.png"
+                class="block w-full"
+                alt="Camera" />
+            </div>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item>
+              <img
+                src="assets/images/3.png"
+                class="block w-full"
+                alt="Exotic Fruits" />
+            </div>
+          </div>
+        </div>
         </section>
 
 
         <section class="right-tab">
-            <h1 class="title">a website that turns your <br> frown upside down.</h1>
+            <h1 class="title">a website that turns <br>your frown upside down</h1>
             <p>browse uplifting activities below to brighten your day!</p>
 
 
             <div class="scroll-div ">
                 <ul class="scroll-ul overflow-x-scroll">
-                    <img class="activity" src="assets/images/1.png">
-                    <img class="activity" src="assets/images/2.png">
-                    <img class="activity" src="assets/images/3.png">
-                    <img  class="activity"src="assets/images/4.png">
+                    <img class="activity" src="assets/images/card-animals.png">
+                    <img class="activity" src="assets/images/card-quotes.png">
+                    <img class="activity" src="assets/images/card-jokes.png">
+                    <img class="activity" src="assets/images/card-journal.png">
                 </ul>
             </div>    
         </section>

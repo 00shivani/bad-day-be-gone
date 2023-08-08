@@ -80,14 +80,14 @@ nav ul li {
     position: absolute;
     left: 45%;
     top: 20%;
-    right: 2%;
+    right: 3%;
 }
 
-#happy-pic {
+#carousel {
     position: relative;
     left: 20px;
-    top: 15px;
-    width: 400px;
+    top: 20px;
+    width: 425px;
     border-top-right-radius: 25%;
 }
 
@@ -116,7 +116,7 @@ nav ul li {
 
 .activity {
     display: block;
-    width: 240px;
+    width: 260px;
     margin-top: 20px;
     cursor: pointer;
 
