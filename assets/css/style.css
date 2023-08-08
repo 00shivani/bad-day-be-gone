@@ -41,7 +41,7 @@
 
 .navbar {
     width: 100%;
-    height: 0vh;
+    height: 0vh; 
     margin: auto;
     display: flex;
     align-items: center;
@@ -129,4 +129,18 @@ nav ul li {
     width: 100%;
     box-sizing: border-box;
 }
+circle-conatiner {
+    display: inline-block;
+    position: relative;
+}
+
+
+.hover-rounded-full:hover {
+    border-radius: 9999px;
+}
+
+
+
+
+
 
