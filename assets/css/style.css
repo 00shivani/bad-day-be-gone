@@ -12,12 +12,15 @@
     --palepurple: #E6C5E9;
     --deepyellow: #9E7002;
     --green: #8B9B96;
+    --lightCoral: #FF9B6D;
     }
     
 * {
     margin: 0;
     padding: 0;
 }
+
+/************************** VIEWPORT ONE (.screen-one) BASIC STYLING *****************************/
 
 .screen-one {
     display: flex;
@@ -27,6 +30,7 @@
     box-sizing: border-box;
 }
 
+/* HEADER AND NAVIGATION MENU */
 .top-header {
     width: 100%;
     height: 30px;
@@ -38,7 +42,6 @@
     );
     text-align: center;
 }
-
 .navbar {
     width: 100%;
     height: 0vh; 
@@ -46,101 +49,197 @@
     display: flex;
     align-items: center;
 }
-
 #logo {
     width: 300px;
     cursor: pointer;
     position: relative;
     top: 50px;
 }
-
 nav {
     width: 100%;
     flex: 1;
-    padding-left: 60px;
 }
-
 nav ul li {
     display: inline-block;
     list-style: none;
     margin-top: 20px;
     margin-left: 100px;
     text-decoration: none;
-    color: black;
-    
+    color: black;  
 }
 
+/* LEFT SIDE OF VIEWPORT 1, CAROUSEL STYLING */
 .left-tab {
     position: relative;
     top: 15%;
     left: 5%;
 }
-
-.right-tab {
-    position: absolute;
-    left: 45%;
-    top: 20%;
-    right: 3%;
-}
-
 #carousel {
     position: relative;
-    left: 20px;
-    top: 20px;
-    width: 425px;
+    top: 30px;
+    max-height: 425px;
+    max-width: 425px;
     border-top-right-radius: 25%;
 }
 
+/* RIGHT SIDE OF VIEWPORT 1*/
+.right-tab {
+    position: absolute;
+    left: 45%;
+    top: 22%;
+}
 .right-tab h1 {
     font-size: 40px;
     font-weight: 100;
-    text-align: right;
-    padding-right: 20px;
+    text-align: center;
+    
 }
-
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
-    text-align: right;
-    padding-right: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
-
+/* SCROLL CONTAINER STYLING */
 .scroll-ul {  
     display: flex; 
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
-    margin-top: 15px;
+    margin-top: 10px;
 }
-
 .activity {
+    /* THIS CLASS REPRESENTS EACH ACTIVITY DIV IN THE SCROLL CONTAINER */
     display: block;
     width: 260px;
     margin-top: 20px;
     cursor: pointer;
-
 }
 
+/************************** VIEWPORT TWO (.screen-two) BASIC STYLING *****************************/
+
 .screen-two {
-    background-color: var(--green);
+    background-color: var(--lightpurple);
     display: flex;
-    height: 80vh;
+    height: 95vh;
     width: 100%;
     box-sizing: border-box;
 }
+
+/* LEFT SIDE OF VIEWPORT 2 STYLING */
+.left2 {
+    position: relative;
+    top: 10%;
+    left: 5%;
+
+}
+
+/* JOURNAL SLOGAN POSITIONING */
+.journal-slogan {
+    position: absolute;
+    left: 350px;
+    bottom: 340px;
+    max-width: 125%;
+}
+
+/* FORM STYLING */
+form {
+    display: flex;
+}
+.text {
+    /* THIS CLASS REFERS TO THE TEXT AREA ELEMENT */
+    width: 250%;
+    height: 60%;
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: text;
+}
+.form-input {
+    /* THIS CLASS REFERS TO THE NAME AND DATE INPUT ELEMENTS */
+    width: 300px;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* KANYE SCALE STYLING */
+.right2 {
+    /* THIS CLASS REFERS TO THE ENTIRE YELLOW DIV FOR THE KANYE SCALE */
+    position: relative;
+    top: 13%;
+    left: 72%;
+    max-width: 40%;
+    max-height: 380px;
+    background-color: var(--yellow);
+    border-radius: 20px;
+}
+.vibes-title {
+    /* THIS CLASS REFERS TO THE "VIBE CHECK" TITLE IMAGE ABOVE THE KANYE DIV */
+    position: absolute;
+    left: 70%;
+    bottom: -60px;
+    max-width: 260px;
+}
+.vibe-div {
+    /* THIS CLASS REFERS TO THE GRID CREATED WITHIN THE DIV SO KANYE CAN LINE UP WITH THE CHECK BOXES */
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+}
+.kanye {
+    /* THIS CLASS REFERS TO EVERY KANYE FACE PICTURE IN THE DIV */
+    margin: 5px 0px;
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
+.checks {
+    /* THIS CLASS REFERS TO THE EVERY CHECKBOX IN THE KANYE SCALE DIV */
+    width: 200px;
+}
+.right2 p {
+    /* THIS IS TARGETTING THE PARAGRAPH ELEMENT AT THE TOP OF THE KANYE SCALE DIV */
+    background-color: var(--light-peach);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-align: center;
+}
+.submit {
+    /* THIS CLASS REFERS TO THE SUBMIT BUTTON */
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/************************************ FOOTER: BASIC STYLING ***************************************/
+
+footer {
+    background-color: var(--lightCoral);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV LINK HOVER STYLING */
 circle-conatiner {
     display: inline-block;
     position: relative;
 }
-
-
 .hover-rounded-full:hover {
     border-radius: 9999px;
 }
-
-
-
-
-
-
