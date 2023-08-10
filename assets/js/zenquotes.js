@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var api = "https://zenquotes.io/api/image/random/";
 var zenQuoteEl = document.querySelector('#zen-quote-button');
 
@@ -32,7 +32,18 @@ zenQuoteEl.addEventListener('click', function() {
 });
 
 fetchQuote();
-=======
+
+categoriesUrl = 'https://famous-quotes4.p.rapidapi.com/'; //BASE URL NO PARAMS
+quotesUrl = 'https://famous-quotes4.p.rapidapi.com/random?'; //BASE URL NO PARAMS
+// Complete quotesUrl: 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2'
+
+card = document.getElementById('quoteCard').addEventListener("click", popupDiv(), false);
+cardEl = document.createElement('div');
+
+function popupDiv(event) {
+    if (event == "click") {
+        window.alert("You touched the screen!");
+      
 categoriesUrl = 'https://famous-quotes4.p.rapidapi.com/'; //BASE URL NO PARAMS
 quotesUrl = 'https://famous-quotes4.p.rapidapi.com/random?'; //BASE URL NO PARAMS
 // Complete quotesUrl: 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2'
@@ -45,6 +56,38 @@ function popupDiv(event) {
         window.alert("You touched the screen!");
     }
 };
+
+
+categoriesUrl = fetch('https://famous-quotes4.p.rapidapi.com/', {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '8dc8ef7afbmsh33b2987a92c5956p1cc770jsncd8dd785bb33',
+        'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
+    }
+})
+.then(function (response) {
+    return response.json();
+})
+.then(function (data) {
+        console.log(data);
+})
+
+
+var quotesUrl = fetch ('https://famous-quotes4.p.rapidapi.com/random?category=' + category + '&count=' + number, {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '8dc8ef7afbmsh33b2987a92c5956p1cc770jsncd8dd785bb33',
+		'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
+
+    }
+})
+.then (function (response) {
+    return response.json();
+})
+.then (function (data) {
+    console.log(data);
+});
+
 
 
 categoriesUrl = fetch('https://famous-quotes4.p.rapidapi.com/', {
@@ -154,5 +197,5 @@ var quotesUrl = fetch ('https://famous-quotes4.p.rapidapi.com/random?category=' 
 
 //     needMoreZenEl.appendChild(linkEl);
 // };
-// getQuoteNow();
->>>>>>> 8f909d1a0379cecf0e2bc6afbdfaa126e7db12c2
+
+
