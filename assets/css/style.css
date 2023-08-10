@@ -54,18 +54,22 @@
     cursor: pointer;
     position: relative;
     top: 50px;
+    align-items: center;
 }
 nav {
     width: 100%;
     flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 nav ul li {
     display: inline-block;
     list-style: none;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 120px;
     text-decoration: none;
-    color: black;  
+    color: black; 
+    justify-content: center; 
 }
 /* NAV LINK HOVER STYLING */
 circle-conatiner {

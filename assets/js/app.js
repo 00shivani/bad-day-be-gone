@@ -13,3 +13,6 @@
 // same thing: click on home screen box, takes up whole screen except nav and logo and above
 // click generate
 // exit button
+
+//for the rotating carousel of Images NEXT to the apps.
+
