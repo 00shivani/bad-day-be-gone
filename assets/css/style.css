@@ -20,6 +20,9 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--light-peach);
+}
 /************************** VIEWPORT ONE (.screen-one) BASIC STYLING *****************************/
 
 .screen-one {
@@ -105,29 +108,32 @@ circle-conatiner {
     font-size: 40px;
     font-weight: 100;
     text-align: center;
+    position: relative;
+    left: 140px;
+    bottom: 20px;
     
 }
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: center;
+    position: relative;
+    left: 140px;
+    bottom: 20px;
 }
 
-/* SCROLL CONTAINER STYLING */
-.scroll-ul {  
-    display: flex; 
-    width: 100%;
-    overflow-x: scroll;
-    white-space: nowrap;
-    margin-top: 10px;
-}
+
 .activity {
     /* THIS CLASS REPRESENTS EACH ACTIVITY DIV IN THE SCROLL CONTAINER */
-    display: block;
-    width: 260px;
-    margin-top: 20px;
+    display: inline-block;
+    width: 170px;
     cursor: pointer;
+    position: relative;
+    bottom: 340px;
+    left: 535px;
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
 /************************** VIEWPORT TWO (.screen-two) BASIC STYLING *****************************/
