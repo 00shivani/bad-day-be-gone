@@ -1,49 +1,3 @@
-
-var api = "https://zenquotes.io/api/image/random/";
-var zenQuoteEl = document.querySelector('#zen-quote-button');
-
-function fetchQuote() {
-    fetch(api)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            displayQuotes(data);
-        })
-        .catch(function(error) {
-            console.error('Error fetching quotes:', error);
-        });
-}
-
-function displayQuotes(data) {
-    var quoteContainerEl = document.querySelector('#quote-container');
-
-    for (var i = 0; i < data.length; i++) {
-        var quoteEl = document.createElement('div');
-        quoteEl.classList.add('quote');
-        quoteEl.textContent = data[i].q;
-
-        quoteContainerEl.appendChild(quoteEl);
-    }
-}
-
-zenQuoteEl.addEventListener('click', function() {
-    fetchQuote();
-});
-
-fetchQuote();
-
-categoriesUrl = 'https://famous-quotes4.p.rapidapi.com/'; //BASE URL NO PARAMS
-quotesUrl = 'https://famous-quotes4.p.rapidapi.com/random?'; //BASE URL NO PARAMS
-// Complete quotesUrl: 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2'
-
-card = document.getElementById('quoteCard').addEventListener("click", popupDiv(), false);
-cardEl = document.createElement('div');
-
-function popupDiv(event) {
-    if (event == "click") {
-        window.alert("You touched the screen!");
-      
 categoriesUrl = 'https://famous-quotes4.p.rapidapi.com/'; //BASE URL NO PARAMS
 quotesUrl = 'https://famous-quotes4.p.rapidapi.com/random?'; //BASE URL NO PARAMS
 // Complete quotesUrl: 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2'
@@ -56,38 +10,6 @@ function popupDiv(event) {
         window.alert("You touched the screen!");
     }
 };
-
-
-categoriesUrl = fetch('https://famous-quotes4.p.rapidapi.com/', {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '8dc8ef7afbmsh33b2987a92c5956p1cc770jsncd8dd785bb33',
-        'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
-    }
-})
-.then(function (response) {
-    return response.json();
-})
-.then(function (data) {
-        console.log(data);
-})
-
-
-var quotesUrl = fetch ('https://famous-quotes4.p.rapidapi.com/random?category=' + category + '&count=' + number, {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '8dc8ef7afbmsh33b2987a92c5956p1cc770jsncd8dd785bb33',
-		'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
-
-    }
-})
-.then (function (response) {
-    return response.json();
-})
-.then (function (data) {
-    console.log(data);
-});
-
 
 
 categoriesUrl = fetch('https://famous-quotes4.p.rapidapi.com/', {
@@ -197,5 +119,4 @@ var quotesUrl = fetch ('https://famous-quotes4.p.rapidapi.com/random?category=' 
 
 //     needMoreZenEl.appendChild(linkEl);
 // };
-
-
+// getQuoteNow();
