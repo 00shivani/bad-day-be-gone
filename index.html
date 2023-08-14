@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Roboto font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,700&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Tailwind Elements styles-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="google-fonts" />
@@ -13,13 +17,15 @@
     <link rel="tailwind" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <!-- jQuery UI Link -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <!-- Flowbite Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Bad-Day-Be-Gone!</title>
 </head>
 
 
-<body>
+<body id="body">
     
     <!------------------------------------------ HEADER ------------------------------------------------>
 
@@ -46,7 +52,7 @@
     <!------------------------------------------ VIEWPORT 1 ------------------------------------------------>
 
 
-    <main class="screen-one">
+    <main class="screen-one" id="screen-one">
         <!-- CAROUSEL CODE COMPLETE: LEAVE THIS SECTION CLOSED -->
         <section class="left-tab">
           <div
@@ -91,27 +97,37 @@
 
         <!-- HOME SCREEN TEXT -->
         <section class="right-tab">
-            <h1 class="title leading-tight">a website that turns <br>your frown upside down</h1>
-            <p>browse uplifting activities below to brighten your day!</p>
+            <h1 id="web-title" class="title leading-tight">a website that turns <br>your frown upside down</h1>
+            <p id="web-subtitle" >browse uplifting activities below to brighten your day!</p>
 
           <!-- SCROLL CONTAINER CODE COMPLETE, LEAVE THIS SECTION CLOSED UNLESS YOU'RE WORKING ON THE LINK ISSUE -->
-            <!-- <div class="scroll-div "> -->
-            <!-- </div>     -->
+            <div class="scroll-div">
+                <ul class="scroll-ul overflow-x-scroll" id="scroll-div">
+                    <img id="animals-card" class="activity" src="assets/images/card-animals.png"                  
+                    class="tooltip transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Generate random animal pictures!">
+
+                    <img id="quotes-card" class="activity" src="assets/images/card-quotes.png"
+                    class="purple transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Get inspired with a quote!">
+
+                    <img id="jokes-card" class="activity" src="assets/images/card-jokes.png"
+                    class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Generate a funny joke!">
+
+                    <img id="journal-card" class="activity" src="assets/images/card-journal.png"
+                    class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Write a journal entry!">
+                </ul>
+            </div>    
         </section>
     </main>
 
-<!-- Animal Card -->
-<a href="https://github.com/"><img id="animalCard" class="activity" src="assets/images/card-animals.png"            class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600" data-te-toggle="tooltip" title="Generate random animal pictures!"></a>
-<!-- Quote Card -->
-<img id="quoteCard"  class="activity" src="assets/images/card-quotes.png" class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600" data-te-toggle="tooltip" title="Get inspired with a quote!">
-<!-- Joke Card -->
-<img id="jokeCard" class="activity" src="assets/images/card-jokes.png" class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600" data-te-toggle="tooltip" title="Generate a funny joke!">
-<!-- Journal Card --> 
-<img id="journalCard" class="activity" src="assets/images/card-journal.png"
-class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-data-te-toggle="tooltip"
-title="Write a journal entry!">
-    <!------------------------------------------ VIEWPORT 2 -------------------------------------------------->
+    <!------------------------------------------ VIEWPORT 2 ------------------------------------------------>
     
     <!-- JOURNAL FORM COMPLETE, BUT NEEDS LISTENERS (JS) -->
     <main class="screen-two" id="journal">
@@ -245,9 +261,15 @@ title="Write a journal entry!">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- jQuery UI Script -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Flowbite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
     <!-- Custom JS -->
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/zenquotes.js"></script>
+    <script src="./assets/js/landing.js"></script>
+    <script src="./assets/js/journal.js"></script>
+    <script src="./assets/js/animals.js"></script>
+    <script src="./assets/js/quotes.js"></script>
+    <script src="./assets/js/jokes.js"></script>
+    
 
 </body>
 </html>
