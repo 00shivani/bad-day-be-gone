@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 window.addEventListener('resize', () => {
     console.log('device size:', window.innerWidth);
@@ -20,3 +21,6 @@ if (screen.width > 500) {
 
 
 
+=======
+// potentially add a button that creates smiley face confetti when clicked.
+>>>>>>> b8af43a24c435b3c789d0d9a8b4e99a464570056

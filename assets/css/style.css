@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
 
 /* color palette: */
 :root {
@@ -20,6 +24,7 @@
     padding: 0;
 }
 
+<<<<<<< HEAD
 body {
     background-color: var(--light-peach);
 }
@@ -27,6 +32,8 @@ body {
 .hidden {
     display: none;
 }
+=======
+>>>>>>> b8af43a24c435b3c789d0d9a8b4e99a464570056
 /************************** VIEWPORT ONE (.screen-one) BASIC STYLING *****************************/
 
 .screen-one {
@@ -111,32 +118,29 @@ circle-conatiner {
     font-size: 40px;
     font-weight: 100;
     text-align: center;
-    position: relative;
-    left: 140px;
-    bottom: 20px;
     
 }
 .right-tab p {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 2px;
+    margin-top: 10px;
     text-align: center;
-    position: relative;
-    left: 140px;
-    bottom: 20px;
 }
 
-
+/* SCROLL CONTAINER STYLING */
+.scroll-ul {  
+    display: flex; 
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 10px;
+}
 .activity {
     /* THIS CLASS REPRESENTS EACH ACTIVITY DIV IN THE SCROLL CONTAINER */
-    display: inline-block;
-    width: 170px;
+    display: block;
+    width: 260px;
+    margin-top: 20px;
     cursor: pointer;
-    position: relative;
-    bottom: 340px;
-    left: 535px;
-    margin-right: 4px;
-    margin-left: 4px;
 }
 
 /************************** VIEWPORT TWO (.screen-two) BASIC STYLING *****************************/
@@ -255,6 +259,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+<<<<<<< HEAD
 }
 
 /*@media (max-width: 768px) {
@@ -346,4 +351,6 @@ footer {
             margin-top: 20px;
         }
     }
+=======
+>>>>>>> b8af43a24c435b3c789d0d9a8b4e99a464570056
 }
