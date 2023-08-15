@@ -30,15 +30,29 @@
 
         <!-- NAV BAR NEEDS SOME TWEAKS // SEE PROJECTS BACKLOG ON GITHUB-->
         <div class="navbar flex items-center justify-center">
-            <nav>
-                <ul>
+          <nav class="mobile-nav md:hidden lg:hidden xl:hidden">
+            <div class="dropdown-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Meditate</a></li>
+            </ul>
+        </nav>
+        
+            <nav class="hidden md:block lg:block xl:block"> 
+              <ul class="flex space-x-3">
                     <li><a href="" class="rounded-full hover:bg-purple-500 hover:text-white px-3 py-2">Home</a></li>
                     <li><a href="#journal" class="rounded-full hover:bg-purple-500 hover:text-white px-3 py-2" >Journal</a></li>
                     <li><img id="logo" src="assets/images/logo.png"></li>
                     <li><a href="" class="rounded-full hover:bg-purple-500 hover:text-white px-3 py-2">Mission</a></li>
                     <li><a href="" class="rounded-full  hover:bg-purple-500 hover:text-white px-3 py-2">Meditate</a></li>
                 </ul>
-            </nav>  
+           </nav>
         </div>
     </header>
   
@@ -120,7 +134,7 @@ title="Write a journal entry!">
           <input class="form-input" type="text" placeholder="name"> <br>
           <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
           <input class="form-input" type="date" placeholder="date"> <br>
-          <textarea class="text">journal: type type away...</textarea>
+          <textarea class="text" placeholder="journal: type type away ..."></textarea>
         </div>
 
         <!-- TITLE IMAGE ABOVE KANYE DIV -->
@@ -248,6 +262,7 @@ title="Write a journal entry!">
     <!-- Custom JS -->
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/zenquotes.js"></script>
+    <script src="assets\js\landing.js"></script>
 
 </body>
 </html>
