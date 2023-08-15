@@ -183,7 +183,7 @@ birdButton.addEventListener("click", function () {
     birdImageContainer.innerHTML = "";
 // appending "last" button to the "birdContainer" element
     birdContainer.appendChild(last);
-    var birdUrl = "http://shibe.online/api/birds?count=1&urls=true";
+    var birdUrl = "https://shibe.online/api/birds?count=1&urls=true";
 // api fetch request function
     function fetchBirds () {
         fetch(birdUrl).then (function (response) {
