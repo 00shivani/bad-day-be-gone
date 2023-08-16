@@ -133,17 +133,17 @@
     <main class="screen-two" id="journal">
       <form>
         <div class="left2">
-          <input class="form-input" type="text" placeholder="name"> <br>
+          <input class="form-input" type="text" placeholder="name" id="journalName"> <br>
           <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
-          <input class="form-input" type="date" placeholder="date"> <br>
-          <textarea class="text">journal: type type away...</textarea>
+          <input class="form-input" type="date" placeholder="date" id="journalDate"> <br>
+          <textarea class="text" id="journalText">journal: type type away...</textarea>
         </div>
 
         <!-- TITLE IMAGE ABOVE KANYE DIV -->
-        <img class="vibes-title" src="assets/images/vibe-check.png">
+        <img id="vibes-title" class="vibes-title" src="assets/images/vibe-check.png">
 
         <!-- KANYE SCALE SECTION: SUBMIT BUTTON + FORM HANDLER STILL TO BE CONFIGURED -->
-        <div class="right2">
+        <div class="right2" id="right2">
           <p>on a scale from <b>kanye to kanye</b>, <br>how are you feeling?</p>
 
           <!-- CHECKBOXES CODE FROM TAILWIND, LEAVE CLOSED -->
@@ -221,7 +221,7 @@
           </div>
 
           <!-- SUBMIT BUTTON NEEDS A LISTENER AND HANDLER -->
-          <input type="submit" placeholder="submit" class="submit">        
+          <input type="submit" placeholder="submit" class="submit" id="journalSubmit">        
         </div>
 
       </form>
