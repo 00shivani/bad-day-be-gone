@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
+/* @tailwind base; */
+/* @tailwind components;
 @tailwind utilities;
-/* 
-font-family: 'Bricolage Grotesque', sans-serif;
+/*  */
+/* font-family: 'Bricolage Grotesque', sans-serif;
 font-family: 'Poppins', sans-serif;
-font-family: 'PT Serif', serif; */
+font-family: 'PT Serif', serif; */ 
 
 /* color palette: */
 :root {
@@ -142,19 +142,19 @@ circle-conatiner {
 
 /* LEFT SIDE OF VIEWPORT 2 STYLING */
 
-.left2 {
+ /*.left2 {
     position: relative;
     top: 10%;
     left: 5%;
-}
+ */
 
-/* JOURNAL SLOGAN POSITIONING */
-.journal-slogan {
+ /* JOURNAL SLOGAN POSITIONING */
+ /* .journal-slogan {
     position: absolute;
     left: 350px;
     bottom: 340px;
     max-width: 125%;
-}
+ } */
 
 /* FORM STYLING */
 form {
@@ -176,27 +176,29 @@ form {
     margin: 10px 0px;
     padding: 20px;
     border-radius: 20px;
-}
-
-/* KANYE SCALE STYLING */
-.right2 {
+ }
+ /* NEED TO FIX KANYE SECTION FOR MAIN DISPLAY */
+ /* KANYE SCALE STYLING */
+ .right2 {
     /* THIS CLASS REFERS TO THE ENTIRE YELLOW DIV FOR THE KANYE SCALE */
-    position: relative;
+    /* position: relative;
     top: 13%;
     left: 72%;
     max-width: 40%;
-    max-height: 380px;
+    max-height: 380px; */
     background-color: var(--yellow);
     border-radius: 20px;
-}
-.vibes-title {
+ }
+ 
+ /* .vibes-title { */
     /* THIS CLASS REFERS TO THE "VIBE CHECK" TITLE IMAGE ABOVE THE KANYE DIV */
-    position: absolute;
-    left: 70%;
-    bottom: -60px;
-    max-width: 260px;
-}
-.vibe-div {
+    /* position: absolute; */
+    /* left: 70%; */
+    /* bottom: -60px; */
+    /* max-width: 260px; */
+ /* } */
+ 
+ .vibe-div {
     /* THIS CLASS REFERS TO THE GRID CREATED WITHIN THE DIV SO KANYE CAN LINE UP WITH THE CHECK BOXES */
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
@@ -246,4 +248,239 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/*--------------------MOBILE MEDIA QUERIES ---------------------------------*/
+
+@media screen and (max-width: 414px){
+    .top-header {
+        height: 50px;
+    }
+    .text {
+        width: 100%;
+    }
+    .form-input {
+        width: 90%;
+       
+    }
+    #logo {
+        margin: auto;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 30px; 
+        text-align: left;
+    }
+    #carousel {
+        display: none;
+    }
+    
+    .right-tab {
+        
+        left: 5%;
+        top: 10%;
+    }
+
+    .right-tab h1,
+    .right-tab p {
+    
+        font-size: 30px;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .screen-one {
+        height: 75vh;
+    }
+    #web-title {
+        margin-top: 23%;
+    }
+    #web-subtitle {
+        font-size: 22px;
+    }
+    .form-input {
+        /* Reduce width and adjust other styles as needed */
+        width: 100%;
+        /* Adjust other styles as needed */
+    }
+    footer {
+        text-align: center; /* Center-align the footer content */
+    }
+
+    /* Adjust font size or other styles for readable content */
+    footer p {
+        font-size: 14px; 
+    }
+
+    .screen-one {
+            flex-direction: column; /* Stack items vertically */
+        }
+
+    .activity {
+            
+            position: static;
+            margin: 5px; /* Adjust spacing between activity boxes */
+        }
+    .left2 {
+            flex-basis: 1;
+            min-width: 90% ;
+            margin: 5px auto;
+            height: 30%;
+
+        }
+    .right2 {
+            margin: 5px auto;
+            max-width: 90%;
+
+        }
+
+    .vibes-title {
+            width: 70%;
+            margin: 15px auto;
+             
+        }
+     .journal-slogan {
+            max-width: 100%;
+            margin-top: 10px;
+
+              
+        }
+
+     #journal-form {
+            display: flex; 
+            flex-direction: column;
+            height: 100%;
+
+        }
+     .screen-one {
+            height: 70vh;
+        }
+    .screen-two {
+            height: 125vh;
+        }
+    }
+
+/*----------------------------- MEDIA QUERIES----------------------- */
+@media screen and (max-width: 768px) {
+    .top-header {
+        height: 40px;
+    }
+    .text {
+        width: 100%;
+        height: 55%;
+    }
+    .form-input {
+        width: 90%;
+       
+    }
+    #logo {
+        margin: auto;
+        width: 365px;
+        top: 65px;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 30px; 
+        text-align: left;
+    }
+    #carousel {
+        width: 45%;
+        margin-top: 10px;
+        
+    }
+    
+    .right-tab {
+        
+        left: 5%;
+        top: 10%;
+    }
+
+    .right-tab h1,
+    .right-tab p {
+    
+        font-size: 40px;
+        text-align: center;
+
+    }
+    
+    .screen-one {
+        height: 75vh;
+    }
+    #web-title {
+        position: relative;
+        top: 225px;
+        margin-left: 50%;
+        font-size: 43px;
+    }
+    #web-subtitle {
+        font-size: 30px;
+        position: relative;
+        top: 350px;
+    }
+    .form-input {
+        width: 100%;
+         
+    }
+    footer {
+        text-align: center; /* Center-align the footer content */
+    }
+
+    /* Adjust font size or other styles for readable content */
+    footer p {
+        font-size: 14px; 
+    }
+
+    .screen-one {
+            flex-direction: column; 
+            height: 110vh;
+        }
+
+    .activity {
+            
+            position: static;
+            margin: 5px; /* Adjust spacing between activity boxes */
+        }
+    .left2 {
+            flex-basis: 1;
+            min-width: 95% ;
+            margin: 5px auto;
+            height: 30%;
+
+        }
+    .right2 {
+            margin: 5px auto;
+            max-width: 90%;
+
+        }
+
+    .vibes-title {
+            width: 45%;
+            margin: 15px auto;
+             
+        }
+     .journal-slogan {
+            max-width: 60%;
+            margin: auto;
+            margin-top: 10px;
+
+              
+        }
+
+     #journal-form {
+            display: flex; 
+            flex-direction: column;
+            height: 100%;
+     }
+     
+    .vibe-div {
+        grid-template-columns: 6fr 1fr; 
+    }
+ 
+.screen-two {
+        height: 125vh;
+    }
+    .scroll-ul {
+        margin-top: 380px;
+    }
 }
