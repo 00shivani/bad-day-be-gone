@@ -1,4 +1,4 @@
-# Bad-Day-Be-Gone.com!
+# Bad-Day-Be-Gone.com! 😄
 ### An interactive, fun web app for users looking to uplift their mood.
 Created by Shivani Singh, Clarisa Gonzalez, and Jim Buckley
 
