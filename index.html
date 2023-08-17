@@ -35,6 +35,7 @@
         </div>
 
         <!-- NAV BAR NEEDS SOME TWEAKS // SEE PROJECTS BACKLOG ON GITHUB-->
+      
         <div class="navbar flex items-center justify-center">
             <nav>
                 <ul>
@@ -119,7 +120,6 @@
                     title="Generate a funny joke!">
 
                     <img id="journal-card" class="activity" src="assets/images/card-journal.png"
-                    class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                     data-te-toggle="tooltip"
                     title="Write a journal entry!">
                 </ul>
@@ -131,16 +131,20 @@
     
     <!-- JOURNAL FORM COMPLETE, BUT NEEDS LISTENERS (JS) -->
     <main class="screen-two" id="journal">
-      <form>
+      <form id="journal-form">
+
+        <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
+         
+
         <div class="left2">
           <input class="form-input" type="text" placeholder="name"> <br>
-          <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
+          
           <input class="form-input" type="date" placeholder="date"> <br>
-          <textarea class="text">journal: type type away...</textarea>
+          <textarea class="text" placeholder= "journal: type type away..."></textarea>
         </div>
 
-        <!-- TITLE IMAGE ABOVE KANYE DIV -->
-        <img class="vibes-title" src="assets/images/vibe-check.png">
+      <!-- TITLE IMAGE ABOVE KANYE DIV -->
+          <img class="vibes-title" src="assets/images/vibe-check.png">
 
         <!-- KANYE SCALE SECTION: SUBMIT BUTTON + FORM HANDLER STILL TO BE CONFIGURED -->
         <div class="right2">
