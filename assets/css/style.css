@@ -1,9 +1,12 @@
- /* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities;  */
- 
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* 
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
 
-/* color palette:  */
+/* color palette: */
 :root {
     --light-peach: #FDF3DD ;
     --white : #FFFFFF;
