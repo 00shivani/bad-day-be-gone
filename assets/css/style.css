@@ -135,6 +135,7 @@ circle-conatiner {
 .screen-two {
     background-color: var(--lightpurple);
     display: flex;
+    flex-direction: column;
     height: 95vh;
     width: 100%;
     box-sizing: border-box;
@@ -143,14 +144,25 @@ circle-conatiner {
 /* LEFT SIDE OF VIEWPORT 2 STYLING */
 
 .left2 { 
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
 
 /* JOURNAL SLOGAN POSITIONING */
+
 .journal-slogan {
+    margin-left: 10%;
     width: 300px;
-    height: 100px;
-    max-width: 125%;
+    position: relative;
+    bottom: 10%;
+}
+
+.sloganGrid {
+    display: flex;
 }
 
 /* FORM STYLING */
@@ -159,9 +171,9 @@ form {
 }
 .text {
     /* THIS CLASS REFERS TO THE TEXT AREA ELEMENT */
-    width: 250%;
+    width: 100%;
     height: 60%;
-    margin: 10px 0px;
+    margin: 5px 0px;
     padding: 20px;
     border-radius: 20px;
     cursor: text;
@@ -170,39 +182,34 @@ form {
     /* THIS CLASS REFERS TO THE NAME AND DATE INPUT ELEMENTS */
     width: 300px;
     height: 40px;
-    margin: 10px 0px;
+    margin: 5px 0px;
     padding: 20px;
     border-radius: 20px;
 }
 /* NEED TO FIX KANYE SECTION FOR MAIN DISPLAY */
 /* KANYE SCALE STYLING */
 .right2 {
-    /* THIS CLASS REFERS TO THE ENTIRE YELLOW DIV FOR THE KANYE SCALE */
-    /*position: relative;
-    top: 13%;
-    left: 72%;
-    max-width: 40%;
-    max-height: 380px;
-    background-color: var(--yellow);
-    border-radius: 20px; */
-    background-color: var(--yellow);
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
-/* .vibes-title {
-    THIS CLASS REFERS TO THE "VIBE CHECK" TITLE IMAGE ABOVE THE KANYE DIV 
-    position: absolute;
-    left: 70%;
-    bottom: -60px;
-    max-width: 260px; 
-} */
+.vibes-title {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 50%;
+    height: 50px;
+}
 .vibe-div {
     /* THIS CLASS REFERS TO THE GRID CREATED WITHIN THE DIV SO KANYE CAN LINE UP WITH THE CHECK BOXES */
     display: inline-grid;
+    width: 50%;
+    background-color: var(--yellow);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
     padding: 5px;
-    padding-left: 0;
-    padding-right: 0;
     color: white;
 }
 .kanye {
@@ -218,6 +225,7 @@ form {
 }
 .right2 p {
     /* THIS IS TARGETTING THE PARAGRAPH ELEMENT AT THE TOP OF THE KANYE SCALE DIV */
+    width: 50%;
     background-color: var(--light-peach);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -230,12 +238,13 @@ form {
 }
 .submit {
     /* THIS CLASS REFERS TO THE SUBMIT BUTTON */
-    width: 100%;
+    width: 50%;
     height: 50px;
     color: white;
     background-color: var(--orange);
     border-radius: 20px;
     cursor: pointer;
+    margin-top: 2%;
 }
 
 /************************************ FOOTER: BASIC STYLING ***************************************/
@@ -375,12 +384,21 @@ footer {
     }
   
     nav ul li {
-        display: block;
+        
         margin-top: 30px; 
         text-align: left;
     }
     #logo {
         margin: -50px;
+    }
+    /* Target the first two <li> elements */
+    nav ul li:nth-child(-n+2) {
+        display: none;
+    }
+
+    /* Target the last two <li> elements */
+    nav ul li:nth-last-child(-n+2) {
+        display: none;
     }
     #carousel {
         display: none;
@@ -397,7 +415,7 @@ footer {
     }
     .screen-one {
         height: 80vh;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
     }
     .scroll-ul {
         margin-top: 140px;
@@ -422,32 +440,45 @@ footer {
         bottom: 0;
     }
           
+    .screen-two {
+        height: 100%;
+    }
     .activity {
             
             position: static;
-            margin: 5px; /* Adjust spacing between activity boxes */
+            margin: 5px; 
         }
     .left2 {
             flex-basis: 1;
             min-width: 90% ;
             margin: 5px auto;
-            margin-top: -10%;
-            height: 30%;
+            margin-top: 20%;
+            height: 50%;
+            align-items: center;
+            justify-content: center;
 
         }
     .right2 {
-            margin: 5px auto;
-            max-width: 90%;
-            position: relative;
-
+            margin-top: 20%;
+            margin: auto;
+            min-width: 90%;
+            height: 50%;
         }
         .text {
             width: 100%;
         }
-
+    
+        .vibe-div {
+            width: 80%;
+        }
+    .right2 p {
+            width: 80%;
+        }
     .vibes-title {
-            width: 70%;
-            margin: 30px auto;
+            width: 80%;
+            margin: auto;
+            margin-top: 30%;
+            margin-bottom: -5%;
              
         }
      .journal-slogan {

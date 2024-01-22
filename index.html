@@ -133,32 +133,23 @@
     <main class="screen-two" id="journal">
       <form id="journal-form">
 
-        <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
-         
-
         <div class="left2">
-<<<<<<< HEAD
-          <input class="form-input" type="text" placeholder="name"> <br>
-          
-          <input class="form-input" type="date" placeholder="date"> <br>
-          <textarea class="text" placeholder= "journal: type type away..."></textarea>
-        </div>
-
-      <!-- TITLE IMAGE ABOVE KANYE DIV -->
-          <img class="vibes-title" src="assets/images/vibe-check.png">
-=======
-          <input class="form-input" type="text" placeholder="name" id="journalName"> <br>
-          <img src="assets/images/journal-slogan.png" alt="Slogan reading 'an entry a day keep the bad days away!'" class="journal-slogan">
-          <input class="form-input" type="date" placeholder="date" id="journalDate"> <br>
+          <div class="sloganGrid">
+            <div class="textAndDate">
+              <input class="form-input" type="text" placeholder="name" id="journalName"> <br>
+              <input class="form-input" type="date" placeholder="date" id="journalDate"> <br>
+            </div>
+            <div class="slogan">
+              <img class="journal-slogan" src="assets/images/journal-slogan.png" alt="Slogan" class="src">
+            </div> 
+          </div>
           <textarea class="text" id="journalText">journal: type type away...</textarea>
         </div>
 
-        <!-- TITLE IMAGE ABOVE KANYE DIV -->
-        <img id="vibes-title" class="vibes-title" src="assets/images/vibe-check.png">
->>>>>>> 14c8cb1aacd2bbb4a03324983ba4f94aeefbe55c
-
         <!-- KANYE SCALE SECTION: SUBMIT BUTTON + FORM HANDLER STILL TO BE CONFIGURED -->
         <div class="right2" id="right2">
+          <!-- TITLE IMAGE ABOVE KANYE DIV -->
+          <img id="vibes-title" class="vibes-title" src="assets/images/vibe-check.png">
           <p>on a scale from <b>kanye to kanye</b>, <br>how are you feeling?</p>
 
           <!-- CHECKBOXES CODE FROM TAILWIND, LEAVE CLOSED -->
@@ -236,7 +227,7 @@
           </div>
 
           <!-- SUBMIT BUTTON NEEDS A LISTENER AND HANDLER -->
-          <input type="submit" placeholder="submit" class="submit" id="journalSubmit">        
+          <input  type="submit" placeholder="submit" class="submit" id="journalSubmit">        
         </div>
 
       </form>
