@@ -28,8 +28,9 @@ font-family: 'PT Serif', serif; */
 
 .screen-one {
     display: flex;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
+    margin: auto;
     background-color: #FDF3DD;
     box-sizing: border-box;
 }
@@ -136,9 +137,10 @@ circle-conatiner {
     background-color: var(--lightpurple);
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    margin: auto;
 }
 
 /* LEFT SIDE OF VIEWPORT 2 STYLING */
@@ -147,6 +149,7 @@ circle-conatiner {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     margin-left: 5%;
@@ -192,6 +195,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -441,7 +445,7 @@ footer {
     }
           
     .screen-two {
-        height: 100%;
+        height: 60%;
     }
     .activity {
             
